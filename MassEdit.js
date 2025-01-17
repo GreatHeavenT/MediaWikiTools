@@ -366,7 +366,7 @@ $(() => (async () => {
           nocreate: true,
           title,
           text: replacedSource,
-          summary: `[[U:BearBin/js#MassEdit|MassEdit]]：【${editFrom.toString().replace(/\n/g, '↵')}】→【${changeTo.replace(/\n/g, '↵')}】${summary && `：${summary}`}`,
+          summary: `文本替换 - 替换“${editFrom.toString().replace(/\n/g, '↵')}”为“${changeTo.replace(/\n/g, '↵')}”${summary && `：${summary}`}`,
         });
         action = 'waiting';
         if (editResult?.edit?.result === 'Success') {
